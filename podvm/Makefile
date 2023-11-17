@@ -50,7 +50,7 @@ endif
 
 endif
 else ifeq ($(PODVM_DISTRO),rhel)
-	$(eval OPTS := -var disk_size=11144)
+	$(eval OPTS := -var disk_size=22288)
 else ifeq ($(PODVM_DISTRO),centos)
 	$(eval OPTS := )
 else
