@@ -447,7 +447,6 @@ func enableSEV(client *libvirtClient, cfg *domainConfig, vm *vmConfig, domain *l
 	domain.OS.Loader = &libvirtxml.DomainLoader{
 		Path:      vm.firmware,
 		Readonly:  "yes",
-		Stateless: "1",
 		Type:      "pflash",
 	}
 
